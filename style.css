@@ -1,0 +1,554 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@font-face {
+    font-family : 'Team Saudi Trailblazer';
+    src         : url('fonts/TeamSaudiTrailblazer-Regular.woff2') format('woff2');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'Team Saudi Essence';
+    src         : url('fonts/TeamSaudiEssence-Regular.woff2') format('woff2');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+}
+
+
+
+:root {
+    --elite-green      : rgba(32, 79, 53, 1);
+    --enabler-green    : rgba(103, 194, 154, 1);
+    --stamina-green-100: rgba(240, 243, 242, 1);
+    --card-shadow      :
+        0px 3px 6px 0px rgba(0, 0, 0, 0.14), 0px 9px 11px 0px rgba(0, 0, 0, 0.1), 0px 24px 14px 0px rgba(0,
+            0,
+            0,
+            0.08), 0px 42px 17px 0px rgba(0, 0, 0, 0.03), 0px 66px 19px 0px rgba(0, 0, 0, 0);
+}
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing            : border-box;
+}
+
+html,
+body {
+    margin     : 0;
+    height     : 100%;
+    font-family: 'Team Saudi Essence';
+}
+
+body {
+    display         : flex;
+    justify-content : center;
+    align-items     : flex-start;
+    background-color: #204F35;
+}
+
+.wrapper {
+    display       : flex;
+    flex-direction: column;
+    background    : #67C29A;
+    min-height    : 100vh;
+    box-shadow    : var(--card-shadow);
+}
+
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height   : auto;
+}
+
+.heading-and-filters {
+    flex-direction     : column;
+    min-width          : 500px;
+    align-items        : flex-start;
+    justify-content    : flex-end;
+    padding            : 44px 24px 24px;
+    background-color   : #204f35;
+    background-image   : url(images/pattren.png);
+    background-position: center center;
+    border-radius      : 0px 0px 40px 40px;
+    background-size    : 100%;
+    background-repeat  : no-repeat;
+    overflow           : hidden;
+    display            : flex;
+    gap                : 10px;
+    position           : relative;
+    box-shadow         : var(--card-shadow);
+    position           : relative;
+    z-index            : 1;
+}
+
+.heading-and-filters .heading {
+    height         : 259px;
+    align-items    : center;
+    justify-content: center;
+    align-self     : stretch;
+    width          : 100%;
+    display        : flex;
+    gap            : 10px;
+    position       : relative;
+}
+
+.heading-and-filters .group {
+    position: relative;
+    width   : 111px;
+    height  : 175.02px;
+}
+
+.heading-and-filters .frame {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : flex-start;
+    justify-content : center;
+    gap             : 13px;
+    position        : relative;
+    align-self      : stretch;
+    width           : 100%;
+    flex            : 0 0 auto;
+    background-color: var(--elite-green);
+    border-radius   : 4px;
+}
+
+.heading-and-filters .together-we-rise {
+    position      : relative;
+    align-self    : stretch;
+    margin-top    : -1.00px;
+    font-family   : 'Team Saudi Trailblazer';
+    font-weight   : 400;
+    color         : var(--stamina-green-100);
+    font-size     : 28px;
+    text-align    : center;
+    letter-spacing: 0.84px;
+    line-height   : 35px;
+}
+
+/* Original CSS code should be injected here */
+
+.heading-and-filters {
+    display         : flex;
+    flex-direction  : column;
+    width           : 100%;
+    max-width       : 500px;
+    align-items     : flex-start;
+    justify-content : flex-end;
+    padding         : 44px 24px 24px;
+    background-color: var(--elite-green);
+    border-radius   : 0 0 40px 40px;
+    overflow        : hidden;
+    gap             : 10px;
+    position        : relative;
+    box-shadow      : var(--card-shadow);
+}
+
+.heading {
+    display        : flex;
+    height         : 259px;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    gap            : 10px;
+}
+
+.group {
+    width : 111px;
+    height: 175.02px;
+}
+
+.frame {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : flex-start;
+    justify-content : center;
+    gap             : 13px;
+    width           : 100%;
+    background-color: var(--elite-green);
+    border-radius   : 4px;
+}
+
+.together-we-rise {
+    width         : 100%;
+    margin-top    : -1px;
+    font-family   : "Team Saudi Trailblazer-Regular", Helvetica, Arial, sans-serif;
+    font-weight   : 400;
+    color         : var(--stamina-green-100);
+    font-size     : 28px;
+    text-align    : center;
+    letter-spacing: 0.84px;
+    line-height   : 35px;
+}
+
+.section-body {
+    flex-direction  : column;
+    width           : 500px;
+    align-items     : center;
+    justify-content : flex-end;
+    padding         : 88px 40px 40px;
+    background-color: #67C29A;
+    overflow        : hidden;
+    display         : flex;
+    gap             : 10px;
+    position        : relative;
+    margin-top      : -34px;
+    gap             : 40px;
+}
+
+.section-body p {
+    font-family   : 'Team Saudi Essence';
+    font-weight   : 400;
+    color         : var(--elite-green);
+    font-size     : 20px;
+    text-align    : center;
+    letter-spacing: 0.48px;
+    line-height   : 20px;
+    margin        : 0;
+
+}
+
+.section-body p.small {
+    font-size    : 14px;
+    text-align   : left;
+    line-height  : 20px;
+    margin-bottom: 20px;
+}
+
+[dir=rtl] .section-body p {
+    line-height: 28px;
+}
+
+.qr-code img {
+    width: 124px;
+}
+
+.cta {
+    display: flex;
+    gap    : 12px;
+}
+
+@media (max-width: 500px) {
+
+    .heading-and-filters,
+    .section-body {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .together-we-rise {
+        font-size  : 24px;
+        line-height: 30px;
+    }
+}
+
+
+.login_wrapper {
+    padding   : 12px;
+    background: #F0F3F2;
+    width     : 100%;
+    min-height: 100vh;
+    display   : flex;
+    gap       : 10px;
+}
+
+.login_art {
+    min-width      : 45%;
+    height         : calc(100vh - 24px);
+    background     : url(images/login-art.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius  : 10px;
+    position       : relative;
+}
+
+
+.login_art .team-saudi-logo {
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .login_art {
+        display: none;
+    }
+
+
+}
+
+
+
+
+.login_form {
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 0 20px;
+}
+
+.login_form-inner {
+    max-width     : 522px;
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    gap           : 28px;
+
+}
+
+.login_form-title {
+    color         : #67C29A;
+    font-family   : "Team Saudi Trailblazer";
+    font-size     : 44px;
+    font-style    : normal;
+    font-weight   : 400;
+    line-height   : 44px;
+    /* 100% */
+    letter-spacing: 0.66px;
+    text-transform: uppercase;
+    margin-bottom : 5px;
+}
+
+.login_form-title-sub {
+    color         : #143329;
+    font-family   : "Team Saudi Trailblazer";
+    font-size     : 30px;
+    font-style    : normal;
+    font-weight   : 400;
+    line-height   : 44px;
+    text-transform: uppercase;
+    letter-spacing: 0.66px;
+    text-transform: uppercase;
+    margin-bottom : 5px;
+}
+
+
+.form-control {
+    margin-bottom: 12px;
+    position     : relative;
+}
+
+.form-control .eye-icon {
+    position : absolute;
+    right    : 12px;
+    top      : 50%;
+    transform: translateY(-50%);
+    cursor   : pointer;
+    display  : flex;
+}
+
+[dir="rtl"] .form-control .eye-icon {
+    left : 12px;
+    right: auto;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+.form-control input {
+    border-radius : 28px;
+    border        : 1px solid var(--Stamina-Green-200, #DFE9E6);
+    background    : var(--White, #FFF);
+    color         : var(--Discipline-Green, #143329);
+    font-family   : "Team Saudi Essence";
+    font-size     : 16px;
+    font-style    : normal;
+    font-weight   : 400;
+    line-height   : 16px;
+    letter-spacing: -0.16px;
+    width         : 100%;
+    display       : flex;
+    height        : 45px;
+    padding       : 8px 12px;
+    align-items   : center;
+    gap           : 10px;
+    align-self    : stretch;
+}
+
+
+
+
+.form-check {
+    display             : flex;
+    min-height          : 1.5rem;
+    padding-inline-start: 1.5em;
+    margin-bottom       : .125rem;
+    align-items         : center;
+    gap                 : 8px;
+}
+
+.form-check.form-switch {
+    padding-inline-start: 2.5em;
+}
+
+.form-check-input {
+    width                     : 32px;
+    height                    : 19px;
+    margin-top                : .25em;
+    vertical-align            : top;
+    background-color          : #fff;
+    background-repeat         : no-repeat;
+    background-position       : center;
+    background-size           : contain;
+    border                    : 1px solid rgba(0, 0, 0, .25);
+    -webkit-appearance        : none;
+    -moz-appearance           : none;
+    appearance                : none;
+    -webkit-print-color-adjust: exact;
+    color-adjust              : exact;
+}
+
+.form-check-label {
+    color       : var(--Elite-Green, #204F35);
+    leading-trim: both;
+    text-edge   : cap;
+    font-family : "Team Saudi Essence";
+    font-size   : 14px;
+    font-style  : normal;
+    font-weight : 400;
+    line-height : 20px;
+    /* 142.857% */
+}
+
+.form-switch .form-check-input {
+    width              : 32px;
+    margin-inline-start: -2.5em;
+    background-image   : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    background-position: left center;
+    border-radius      : 2em;
+    transition         : background-position .15s ease-in-out;
+}
+
+.form-check-input:checked {
+    background-color: #C0D5CE;
+    border-color    : #95B8AC;
+}
+
+.form-switch .form-check-input:checked {
+    background-position: right center;
+    background-image   : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23204F35'/%3e%3c/svg%3e");
+}
+
+
+.btn {
+    display        : flex;
+    height         : 40px;
+    min-width      : 64px;
+    padding        : 8px 16px;
+    justify-content: center;
+    align-items    : center;
+    border-radius  : 20px;
+    border         : 1px solid var(--Discipline-Green, #143329);
+    gap            : 8px;
+    color          : var(--Discipline-Green, #143329);
+    font-family    : "Team Saudi Trailblazer";
+    font-size      : 22px;
+    font-style     : normal;
+    font-weight    : 400;
+    line-height    : 20px;
+    letter-spacing : 0.66px;
+    text-transform : uppercase;
+    gap            : 8px;
+    cursor         : pointer;
+    transition     : color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+[dir="rtl"] .btn svg {
+    transform: scaleX(-1);
+}
+
+.btn.dark {
+    background-color: var(--Discipline-Green, #143329);
+    color           : var(--stamina-green-100, #F0F3F2);
+}
+
+.btn:hover {
+    background-color: var(--Discipline-Green, #143329);
+    color           : var(--stamina-green-100, #F0F3F2);
+}
+
+
+
+.btn.dark:hover {
+    background-color: #67C29A;
+    border-color    : #67C29A;
+}
+
+.btn:hover svg path {
+    fill: #67C29A;
+}
+
+.login_form_btn-wrap {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    margin-top     : 28px;
+}
+
+.login_form_footer {
+    text-align  : center;
+    margin-top  : 32px;
+    color       : var(--Discipline-Green, #143329);
+    text-align  : center;
+    leading-trim: both;
+    text-edge   : cap;
+    font-family : "Team Saudi Essence";
+    font-size   : 12px;
+    font-style  : normal;
+    font-weight : 400;
+    line-height : 22px;
+    /* 183.333% */
+}
+
+.login_form_footer p {
+    color        : var(--Discipline-Green, #143329);
+    text-align   : center;
+    leading-trim : both;
+    text-edge    : cap;
+    font-family  : "Team Saudi Essence";
+    font-size    : 16px;
+    font-style   : normal;
+    font-weight  : 400;
+    line-height  : 22px;
+    margin-bottom: 5px;
+    /* 137.5% */
+}
+
+.btn-close-wraper {
+    position      : absolute;
+    top           : 0;
+    left          : 0;
+    background    : #F0F3F2;
+    display       : flex;
+    padding       : 0px 8px 8px 0px;
+    flex-direction: column;
+    align-items   : flex-start;
+    gap           : 10px;
+    border-radius : 0px 0px 12px 0px;
+
+}
+
+
+
+[dir=rtl] .btn-close-wraper {
+    right        : 0;
+    left         : auto;
+    border-radius: 0px 0px 0 12px;
+    padding      : 0px 0 8px 8px;
+}

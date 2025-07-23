@@ -268,9 +268,9 @@ img {
 
 .login_art {
     min-width      : 45%;
-    height         : calc(100vh - 24px);
-    background     : url(images/login-art.jpg) no-repeat center center;
-    background-size: cover;
+    min-height     : calc(100vh - 24px);
+    background     : url(images/login-art.png) no-repeat center center #143329;
+    background-size: contain;
     border-radius  : 10px;
     position       : relative;
 }
@@ -544,6 +544,11 @@ form {
 
 }
 
+
+p {
+    margin: 0;
+    color : #143329;
+}
 
 
 [dir=rtl] .btn-close-wraper {

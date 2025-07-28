@@ -78,7 +78,6 @@ img {
     justify-content    : flex-end;
     padding            : 44px 24px 24px;
     background-color   : #204f35;
-    background-image   : url(images/pattren.png);
     background-position: center center;
     border-radius      : 0px 0px 40px 40px;
     background-size    : 100%;
@@ -90,6 +89,16 @@ img {
     box-shadow         : var(--card-shadow);
     position           : relative;
     z-index            : 1;
+}
+
+.heading-and-filters .inner {
+    background-image: url(images/pattren.png);
+    background-color: var(--elite-green);
+    width           : 100%;
+    padding-top     : 13px;
+    padding-bottom  : 34px;
+    border-radius   : 0 0 40px 40px;
+    box-shadow      : 0 66px 19px 0 rgba(0, 0, 0, 0.00), 0 42px 17px 0 rgba(0, 0, 0, 0.03), 0 24px 14px 0 rgba(0, 0, 0, 0.08), 0 9px 11px 0 rgba(0, 0, 0, 0.10), 0 3px 6px 0 rgba(0, 0, 0, 0.14);
 }
 
 .heading-and-filters .heading {
@@ -105,22 +114,24 @@ img {
 
 .heading-and-filters .group {
     position: relative;
-    width   : 111px;
-    height  : 175.02px;
+    width   : 164px;
+    height  : auto;
+
 }
 
 .heading-and-filters .frame {
-    display         : flex;
-    flex-direction  : column;
-    align-items     : flex-start;
-    justify-content : center;
-    gap             : 13px;
-    position        : relative;
-    align-self      : stretch;
-    width           : 100%;
-    flex            : 0 0 auto;
-    background-color: var(--elite-green);
-    border-radius   : 4px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : flex-start;
+    justify-content: center;
+    gap            : 13px;
+    position       : relative;
+    align-self     : stretch;
+    width          : 100%;
+    flex           : 0 0 auto;
+    background     : transparent;
+    padding-top    : 10px;
+    padding-bottom : 20px;
 }
 
 .heading-and-filters .together-we-rise {
@@ -139,19 +150,19 @@ img {
 /* Original CSS code should be injected here */
 
 .heading-and-filters {
-    display         : flex;
-    flex-direction  : column;
-    width           : 100%;
-    max-width       : 500px;
-    align-items     : flex-start;
-    justify-content : flex-end;
-    padding         : 44px 24px 24px;
-    background-color: var(--elite-green);
-    border-radius   : 0 0 40px 40px;
-    overflow        : hidden;
-    gap             : 10px;
-    position        : relative;
-    box-shadow      : var(--card-shadow);
+    display        : flex;
+    flex-direction : column;
+    width          : 100%;
+    max-width      : 500px;
+    align-items    : flex-start;
+    justify-content: flex-end;
+    padding        : 0;
+    border-radius  : 0 0 40px 40px;
+    overflow       : hidden;
+    gap            : 10px;
+    position       : relative;
+    box-shadow     : var(--card-shadow);
+    background     : #143329;
 }
 
 .heading {
@@ -192,18 +203,18 @@ img {
 }
 
 .section-body {
-    flex-direction  : column;
-    width           : 500px;
-    align-items     : center;
-    justify-content : flex-end;
-    padding         : 88px 40px 40px;
-    background-color: #67C29A;
-    overflow        : hidden;
-    display         : flex;
-    gap             : 10px;
-    position        : relative;
-    margin-top      : -34px;
-    gap             : 40px;
+    flex-direction     : column;
+    width              : 500px;
+    align-items        : center;
+    justify-content    : flex-end;
+    padding            : 55px 40px 40px;
+    background-color   : #67C29A;
+    overflow           : hidden;
+    display            : flex;
+    gap                : 10px;
+    position           : relative;
+    /* margin-top      : -34px; */
+    gap                : 40px;
 }
 
 .section-body p {
